@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        
+        .header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;	
+            text-align: center;
+        }
+        .header img {
+            height: 100px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #002a80;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            
+        }
+        .menu a:hover {
+            text-decoration: underline;
+			
+        }
+        .content {
+            width: 800px;
+            margin:20px auto;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #0044cc;
+        }
+        .buttons {
+            margin-top: 20px;            
+			display:flex;
+			justify-content:center;
+        }
+        .buttons a {
+            text-decoration: none;
+            background-color: #0044cc;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+          
+        }
+        .buttons a:hover {
+            background-color: #002a80;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+        <img src="mcb.png" alt="MCB Logo">
+        <h1>Muslim Commercial Bank</h1>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="help.html">Help</a>
+        <a href="about.html">About Us</a>
+    </div>
+
+    <div class="content">
+        <h2>Registration Form</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+			<div class="buttons">
+            <a href="index.html">Back</a>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
